@@ -34,3 +34,8 @@ data_admissao = '2022-02-15',
 salario = 5478.15
 WHERE codfuncionario = 8;
 -- Agora faça as alterações necessárias para deixar os campos data_admissao e salario como itens obrigatórios para futuros inserts.
+select * from funcionario;
+ALTER TABLE funcionario
+MODIFY COLUMN data_admissao datetime not null;
+ALTER TABLE funcionario
+MODIFY COLUMN salario float not null;
